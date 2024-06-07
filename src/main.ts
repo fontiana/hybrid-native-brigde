@@ -21,7 +21,7 @@ window.callbackErro = (mensagem: string, chave: string) => {
 
 var promisesCallback: [{ chave: string, promiseResolve: any, promiseReject: any }];
 
-export function comunicacaoNativo(parametro: any) {
+export function comunicacaoNativo(parametro: any): Promise<any> {
     let chavePromise = Math.floor(Math.random() * 99999).toString();
     parametro.chave = chavePromise;
     window['Native']['execute'](JSON.stringify(parametro));
