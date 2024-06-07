@@ -1,0 +1,17 @@
+{
+  "name": "hybrid-native-brigde",
+  "version": "0.0.1",
+  "description": "A package build in Typescript responsible for abstracting iOS and Android native calls",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "teste": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "29.7.0",
+    "typescript": "^5.4.5"
+  }
+}
